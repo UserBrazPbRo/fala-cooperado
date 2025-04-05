@@ -1,8 +1,8 @@
 "use client";
 
-import { FalaCooperadoTitle } from "../components/fala-cooperado-title";
-import { NavBar } from "../components/nav-bar";
-import { FeedbackForm } from "./components/feedback-form";
+import { NavBar } from "@/app/components/nav-bar";
+import { SearchFeedback } from "./components/search-feedback";
+import { FalaCooperadoTitle } from "@/app/components/fala-cooperado-title";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
           <img src="/sicoob-icon.svg" className="w-20" />
           <FalaCooperadoTitle iconsize={32} />
         </div>
-        <FeedbackForm />
+        <SearchFeedback />
       </main>
     </>
   );
