@@ -1,16 +1,14 @@
 import axios from "axios";
 
-export const API_URL = process.env.NEXT_PUBLIC_API_URL;
-
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   headers: {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
   },
 });
 
-console.log("API_URL", API_URL);
+console.log("API_URL", process.env.NEXT_PUBLIC_API_URL);
 export interface ErrorResponse {
   error: string[];
 }
