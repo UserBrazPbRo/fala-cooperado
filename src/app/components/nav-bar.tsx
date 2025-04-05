@@ -20,6 +20,16 @@ function NavBar() {
             <SearchIcon /> Pesquisar minha sugestão
           </Link>
         </li>
+        {token && (
+          <li>
+            <Link
+              className="flex gap-2 font-semibold hover:text-gray-300"
+              href="/internal"
+            >
+              Acesso Interno
+            </Link>
+          </li>
+        )}
         {token ? (
           <li
             className="flex gap-2 font-semibold hover:text-gray-300"
